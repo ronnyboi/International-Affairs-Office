@@ -8,6 +8,7 @@ import Breadcrumbs from '../../components/Common/Breadcrumb';
 import MiniWidgets from "./MiniWidgets";
 import RevenueAnalytics from "./RevenueAnalytics";
 import Analytics from "./Analytics";
+import Analytics2 from "./Analytics2";
 import EarningReports from "./EarningReports";
 import Sources from "./Sources";
 import RecentlyActivity from "./RecentlyActivity";
@@ -27,6 +28,9 @@ class Dashboard extends Component {
                 { icon : "ri-stack-line", title : "Number of MOUs Signed", value : "153", rate : "2.4%", desc : "From previous period" },
                 { icon : "ri-store-2-line", title : "Number of Outgoing Students", value : "57", rate : "2.4%", desc : "From previous period" },
                 { icon : "ri-briefcase-4-line", title : "Number of Outgoing Faculty", value : "12", rate : "2.4%", desc : "From previous period" },
+                { icon : "ri-briefcase-4-line", title : "Number of Joint Researches", value : "43", rate : "2.4%", desc : "From previous period" },
+                { icon : "ri-briefcase-4-line", title : "Number of Joint Collaborations", value : "43", rate : "2.4%", desc : "From previous period" },
+                { icon : "ri-briefcase-4-line", title : "Students participated for dual degree ", value : "21", rate : "2.4%", desc : "From previous period" },
             ]
         }
     }
@@ -52,6 +56,7 @@ class Dashboard extends Component {
 
                                 {/* sales Analytics */}
                                 <Analytics/>
+                                <Analytics2/>
 
                                 {/* earning reports */}
                                 {/* <EarningReports/> */}

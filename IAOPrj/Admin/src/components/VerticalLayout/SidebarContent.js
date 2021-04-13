@@ -121,6 +121,9 @@ class SidebarContent extends Component {
                                 <ul className="sub-menu" aria-expanded="false">
                                     <li><Link to="Students-Incoming-students">{this.props.t('Incoming Students')}</Link></li>
                                     <li><Link to="Students-Outgoing-students">{this.props.t('Outgoing Students')}</Link></li>
+                                    <li><Link to="Outgoing-Students-form">{this.props.t('Outgoing Students Form')}</Link></li>
+                                    <li><Link to="Research-funded-form">{this.props.t('Research Funded Form')}</Link></li>
+                                    <li><Link to="Research-Nonfunded-form">{this.props.t('Research Non Funded Form')}</Link></li>
                                 </ul>
                             </li>
                             <li>
@@ -178,6 +181,59 @@ class SidebarContent extends Component {
                                     <i className="ri-calendar-2-line"></i>
                                     <span className="ml-1">{this.props.t('Reports')}</span>
                                 </Link>
+                            </li>
+
+                            <li>
+                                <Link to="/#" className="waves-effect">
+                                    <i className="ri-eraser-fill"></i>
+                                    <span className="badge badge-pill badge-danger float-right">6</span>
+                                    <span className="ml-1">{this.props.t('Forms')}</span>
+                                </Link>
+                                <ul className="sub-menu" aria-expanded="false">
+                                    <li><Link to="form-elements">{this.props.t('Elements')}</Link></li>
+                                    <li><Link to="form-validation">{this.props.t('Validation')}</Link></li>
+                                    <li><Link to="form-advanced">{this.props.t('Advanced Plugins')}</Link></li>
+                                    <li><Link to="form-editors">{this.props.t('Editors')}</Link></li>
+                                    <li><Link to="form-uploads">{this.props.t('File Upload')}</Link></li>
+                                    <li><Link to="form-xeditable">{this.props.t('X-editable')}</Link></li>
+                                    <li><Link to="form-wizard">{this.props.t('Wizard')}</Link></li>
+                                    <li><Link to="form-mask">{this.props.t('Mask')}</Link></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <Link to="/#" className="has-arrow waves-effect">
+                                    <i className="ri-table-2"></i>
+                                    <span className="ml-1">{this.props.t('Tables')}</span>
+                                </Link>
+                                <ul className="sub-menu" aria-expanded="false">
+                                    <li><Link to="tables-basic">{this.props.t('Basic Tables')}</Link></li>
+                                    <li><Link to="tables-datatable">{this.props.t('Data Tables')}</Link></li>
+                                    <li><Link to="tables-responsive">{this.props.t('Responsive Table')}</Link></li>
+                                    <li><Link to="tables-editable">{this.props.t('Editable Table')}</Link></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <Link to="/#" className="has-arrow waves-effect">
+                                    <i className="ri-bar-chart-line"></i>
+                                    <span className="ml-1">{this.props.t('Charts')}</span>
+                                </Link>
+                                <ul className="sub-menu" aria-expanded="false">
+                                    <li><Link to="charts-apex">{this.props.t('Apexcharts')}</Link></li>
+                                    <li><Link to="charts-chartjs">{this.props.t('Chartjs')}</Link></li>
+                                    <li><Link to="charts-knob">{this.props.t('Jquery Knob')}</Link></li>
+                                    <li><Link to="charts-sparkline">{this.props.t('Sparkline')}</Link></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <Link to="/#" className="has-arrow waves-effect">
+                                    <i className="ri-map-pin-line"></i>
+                                    <span className="ml-1">{this.props.t('Maps')}</span>
+                                </Link>
+                                <ul className="sub-menu" aria-expanded="false">
+                                    <li><Link to="maps-google">{this.props.t('Google Maps')}</Link></li>
+                                    <li><Link to="maps-vector">{this.props.t('Vector Maps')}</Link></li>
+                                </ul>
                             </li>
                             {/* <li>
                                 <Link to="calendar" className=" waves-effect">

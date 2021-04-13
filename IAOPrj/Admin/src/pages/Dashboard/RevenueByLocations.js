@@ -19,7 +19,7 @@ class RevenueByLocations extends Component {
                             <Col lg={8}>
                                 <Card>
                                     <CardBody>
-                                        <Dropdown className="float-right" isOpen={this.state.menu} toggle={() => this.setState({menu : !this.state.menu})}>
+                                        {/* <Dropdown className="float-right" isOpen={this.state.menu} toggle={() => this.setState({menu : !this.state.menu})}>
                                             <DropdownToggle tag="i" className="darrow-none card-drop" aria-expanded="false">
                                                 <i className="mdi mdi-dots-vertical"></i>
                                             </DropdownToggle>
@@ -33,8 +33,8 @@ class RevenueByLocations extends Component {
                                                 
                                                 <DropdownItem href="">Action</DropdownItem>
                                             </DropdownMenu>
-                                        </Dropdown>
-
+                                        </Dropdown> */}
+.
                                         <h4 className="card-title mb-4">Partnered Universities by Locations</h4>
 
                                         <div id="world-vectormap" style={{height: "196px"}}>
@@ -42,7 +42,7 @@ class RevenueByLocations extends Component {
                                           value="world_mill"
                                           width="800"
                                           height="400"
-                                          color="#5893d4"
+                                          color="#EAEAEA"
                                         />
                                         </div>
 
@@ -76,9 +76,9 @@ class RevenueByLocations extends Component {
                                                 </div>
                                             </Col>
                                         </Row>
-                                        <div className="text-center mt-4">
+                                        {/* <div className="text-center mt-4">
                                             <Link to="#" className="btn btn-primary btn-sm">Learn more</Link>
-                                        </div>
+                                        </div> */}
                                         
                                     </CardBody>
                                 </Card>

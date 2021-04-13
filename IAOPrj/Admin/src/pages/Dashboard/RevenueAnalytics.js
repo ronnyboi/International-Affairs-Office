@@ -55,7 +55,7 @@ class RevenueAnalytics extends Component {
                                                 <Button size="sm" color="light" type="button">Monthly</Button>
                                             </ButtonGroup>
                                         </div>
-                                        <h4 className="card-title mb-4">Number of MOUs Signed</h4>
+                                        <h4 className="card-title mb-4">Number of Activities</h4>
                                         <div>
                                             <div id="line-column-chart" className="apex-charts" dir="ltr">
                                             <ReactApexChart options={this.state.options} series={this.state.series} type="line" height="280" />

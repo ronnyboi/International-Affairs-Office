@@ -45,6 +45,11 @@ import ContactDetails from "../pages/_ContactDetails/ContactDetails";
 //Reports
 import Reports from "../pages/_Reports/Reports";
 
+// Forms for each table
+import OutgoingStudentsForm from "../pages/_Forms/OutgoingStudentsForm";
+import ResearchFundedForm from "../pages/_Forms/ResearchFundedForm";
+import ResearchNonFundedForm from "../pages/_Forms/ResearchNonFundedForm";
+
 // Pages Calendar
 import Calendar from "../pages/Calendar/Calendar";
 
@@ -172,6 +177,12 @@ const authProtectedRoutes = [
 	
 	// Reports
 	{ path: "/Reports", component: Reports },
+
+	// Forms for the tables
+	{ path: "/Outgoing-Students-form", component: OutgoingStudentsForm },
+	{ path: "/Research-funded-form", component: ResearchFundedForm },
+	{ path: "/Research-Nonfunded-form", component: ResearchNonFundedForm },
+
 
 	//Kanban Board
 	{ path: "/apps-kanban-board", component : KanbanBoard },

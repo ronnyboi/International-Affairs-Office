@@ -6,11 +6,11 @@ import ReactApexChart from 'react-apexcharts';
 import "./dashboard.scss";
 import "./Analytics.scss";
 
-class Analytics extends Component {
+class Analytics2 extends Component {
     state = {
-        series: [30,70],
+        series: [40,60],
         options : {
-            labels: ["Incoming Students", "Outgoing Students"],
+            labels: ["Incoming Faculty", "Outgoing Faculty"],
             plotOptions: {
                 pie: {
                     donut: {
@@ -24,7 +24,7 @@ class Analytics extends Component {
             legend: {
                 show: false,
             },
-            colors: ['#070d59', '#1f3c88','#5893d4','#ceddef'],
+            colors: ['#5893d4','#ceddef'],
         
         }
     }
@@ -41,7 +41,7 @@ class Analytics extends Component {
                                                 <option value="3">Jan</option>
                                             </select>
                                         </div> */}
-                                        <h4 className="card-title mb-4">Student Analytics</h4>
+                                        <h4 className="card-title mb-4">Faculty Analytics</h4>
 
                                         <div id="donut-chart" className="apex-charts">
                                         <ReactApexChart options={this.state.options} series={this.state.series} type="donut" height="230" />
@@ -50,17 +50,16 @@ class Analytics extends Component {
                                         <Row>
                                             <Col xs={4}>
                                                 <div className="text-center mt-4">
-                                                    <p className="mb-2 text-truncate"><i className="mdi mdi-circle blue1 font-size-10 mr-1"></i>Incoming Students</p>
-                                                    <h5>30 %</h5>
+                                                    <p className="mb-2 text-truncate"><i className="mdi mdi-circle blue3 font-size-10 mr-1"></i> Incoming Faculty</p>
+                                                    <h5>40 %</h5>
                                                 </div>
                                             </Col>
                                             <Col xs={4}>
                                                 <div className="text-center mt-4">
-                                                    <p className="mb-2 text-truncate"><i className="mdi mdi-circle blue2 font-size-10 mr-1"></i> Outgoing Students</p>
-                                                    <h5>70%</h5>
+                                                    <p className="mb-2 text-truncate"><i className="mdi mdi-circle blue4 font-size-10 mr-1"></i> Outgoing Faculty</p>
+                                                    <h5>60 %</h5>
                                                 </div>
                                             </Col>
-                                            
                                         </Row>
                                     </CardBody>
                                 </Card>
@@ -69,4 +68,4 @@ class Analytics extends Component {
     }
 }
 
-export default Analytics;
+export default Analytics2;
